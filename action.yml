@@ -1,0 +1,13 @@
+name: 'get-package-version'
+description: 'get-package.version'
+inputs:
+  input:
+    description: 'file location'
+    required: true
+    default: ''
+outputs:
+  output: # id of output
+    description: 'The package json version'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
